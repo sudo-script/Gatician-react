@@ -1,0 +1,33 @@
+/* src/index.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f6f9;
+}
+
+h1, h2 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+/* For better page layout */
+* {
+  box-sizing: border-box;
+}
+
+/* Optional, to prevent layout jumping when loading images */
+img {
+  display: block;
+  max-width: 100%;
+}

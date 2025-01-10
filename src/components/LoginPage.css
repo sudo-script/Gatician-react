@@ -1,0 +1,125 @@
+/* General Page Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fc;
+  }
+  
+  .login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #4a90e2, #50c9c3);
+  }
+  
+  /* Form Container Styling */
+  .form-container {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 40px;
+    width: 400px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2d3748;
+  }
+  
+  p {
+    font-size: 14px;
+    margin: 10px 0 20px;
+    color: #4a5568;
+  }
+  
+  .toggle-button {
+    background: none;
+    border: none;
+    color: #3182ce;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .toggle-button:hover {
+    text-decoration: underline;
+  }
+  
+  /* Form Styling */
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+    color: #4a5568;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 12px;
+    background: #3182ce;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .submit-button:hover {
+    background: #2c5282;
+  }
+  
+  /* Google Button Styling */
+  .google-button {
+    width: 100%;
+    padding: 12px;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .google-button img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .google-button:hover {
+    background: #f7fafc;
+  }
+  
+  /* Forgot Password Button Styling */
+  .forgot-password-button {
+    background: none;
+    border: none;
+    color: #3182ce;
+    font-size: 14px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .forgot-password-button:hover {
+    text-decoration: underline;
+  }
+  

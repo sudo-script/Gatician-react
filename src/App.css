@@ -1,0 +1,231 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #f8f9fc;
+  color: #2d3748;
+}
+
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 250px;
+  background: #ffffff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #5a67d8;
+  margin-bottom: 30px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  padding: 15px 10px;
+  font-size: 16px;
+  color: #4a5568;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.sidebar ul li:hover,
+.sidebar ul li.active {
+  background-color: #edf2f7;
+  color: #2b6cb0;
+}
+
+/* Main Content */
+main {
+  flex: 1;
+  padding: 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 24px;
+}
+
+.header input {
+  padding: 10px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+/* Cards Section */
+.cards {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+
+.card .chart {
+  height: 200px;
+  width: max-content;
+}
+
+/* Orders Table */
+.orders table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.orders th,
+.orders td {
+  padding: 10px;
+  border: 1px solid #e2e8f0;
+  text-align: left;
+}
+
+/* Recent Orders */
+/* Recent Orders Section */
+.recent-orders {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.recent-orders h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #2d3748;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 10px;
+}
+
+.recent-orders ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recent-orders ul li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 0;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 14px;
+  color: #4a5568;
+  background-color: #f9fafb;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.recent-orders ul li:last-child {
+  border-bottom: none;
+}
+
+.recent-orders ul li:hover {
+  background-color: #edf2f7;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.recent-orders ul li .status-icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.recent-orders ul li.complete .status-icon {
+  background-color: #38a169;
+}
+
+.recent-orders ul li.dispatched .status-icon {
+  background-color: #3182ce;
+}
+
+.recent-orders ul li.assigned .status-icon {
+  background-color: #e53e3e;
+}
+
+.recent-orders ul li.accepted .status-icon {
+  background-color: #d69e2e;
+}
+
+.recent-orders ul li.new .status-icon {
+  background-color: #805ad5;
+}
+
+.recent-orders ul li span {
+  flex: 1;
+  font-weight: 500;
+  color: #2d3748;
+}
+
+.recent-orders ul li time {
+  font-size: 12px;
+  color: #718096;
+}
+
+/* Progress Bar Styles */
+.progress-bar-container {
+  position: relative;
+  width: 100%;
+  height: 12px;
+  background-color: #e2e8f0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  border-radius: 6px;
+  transition: width 0.5s ease-in-out;
+}
+
+.progress-bar.complete {
+  background: linear-gradient(90deg, #38a169, #81c784);
+}
+
+.progress-bar.progress {
+  background: linear-gradient(90deg, #f6ad55, #fbd38d);
+}
+
+.progress-bar.pending {
+  background: linear-gradient(90deg, #e53e3e, #fc8181);
+}
+
+.progress-bar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  opacity: 0.6;
+}
