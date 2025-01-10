@@ -20,8 +20,7 @@ function ProfilePage() {
       <div className="profile-details">
         <h2>Profile Information</h2>
         <p>
-          Welcome to your profile! Here you can see and manage your personal
-          details.
+          Welcome to your profile!
         </p>
         <div className="details-list">
           <div className="detail-item">
